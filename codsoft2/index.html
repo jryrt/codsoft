@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Less Make Art - Mitali Singh</title>
+    <style>
+        /* CSS styles go here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .header-right button {
+            background-color: #0056b3;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .header-right button:hover {
+            background-color: #004494;
+        }
+
+        .hero {
+            background-color: #fff;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .hero-description {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .hero-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hero-button:hover {
+            background-color: #0056b3;
+        }
+
+        .content {
+            display: flex;
+            gap: 20px;
+        }
+
+        .artwork {
+            width: 30%;
+            background-color: #0056b3;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .artwork h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .artwork-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .artwork-item {
+            width: 48%;
+            background-color: #f8f8f8;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .artwork-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .artwork-item p {
+            margin-top: 5px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .artwork-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .artwork-button:hover {
+            background-color: #0056b3;
+        }
+
+        .recent-search {
+            width: 70%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .recent-search h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .search-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .search-item {
+            width: 48%;
+            background-color: #f8f8f8;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            position: relative;
+        }
+
+        .search-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .search-item p {
+            margin-top: 5px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .search-item button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .search-item button:hover {
+            background-color: #0056b3;
+        }
+
+        .close-button {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            border-radius: 50%;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        .close-button:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>LESSMAKEART</h1>
+            <div class="header-right">
+                <button>Log in</button>
+                <button>Sign up</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <div class="hero-title">
+                Mitali Singh
+            </div>
+            <div class="hero-description">
+                I am a student pursuing a Bachelor of Computer Applications and the owner of an art business. This combination of academic focus and entrepreneurial spirit demonstrates my commitment to intellectual growth and creative enterprise.
+            </div>
+            <button class="hero-button">Read More</button>
+        </div>
+
+        <div class="content">
+            <div class="artwork">
+                <h2>Artwork</h2>
+                <div class="artwork-items">
+                    <div class="artwork-item">
+                        <img src="p1.jpg" alt="Artwork 1">
+                        <p>by @𝐒𝐄𝐑𝐄𝐍𝐃𝐈𝐏𝐈𝐓𝐘</p>
+                    </div>
+                    <div class="artwork-item">
+                        <img src="p2.jpg" alt="Artwork 2">
+                        <p>by @JORY</p>
+                    </div>
+                    <div class="artwork-item">
+                        <img src="p3.jpg" alt="Artwork 3">
+                        <p>by @User</p>
+                    </div>
+                    <div class="artwork-item">
+                        <img src="p4.jpg" alt="Artwork 4">
+                        <p>by @User</p>
+                    </div>
+                </div>
+                <button class="artwork-button">View More</button>
+            </div>
+
+            <div class="recent-search">
+                <h2>Recent Search</h2>
+                <div class="search-items">
+                    <div class="search-item">
+                        <button class="close-button">X</button>
+                        <img src="pc1.jpg" alt="Search 1">
+                        <p>Lessmakeart</p>
+                    </div>
+                    <div class="search-item">
+                        <button class="close-button">X</button>
+                        <img src="pc2.jpg" alt="Search 2">
+                        <p>godskii</p>
+                    </div>
+                    <div class="search-item">
+                        <button class="close-button">X</button>
+                        <img src="pc3.jpg" alt="Search 3">
+                        <p>godskii</p>
+                    </div>
+                    <div class="search-item">
+                        <button class="close-button">X</button>
+                        <img src="pc4.jpg" alt="Search 4">
+                        <p>miiiii</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const closeButtons = document.querySelectorAll('.close-button');
+
+        closeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                button.parentElement.remove();
+            });
+        });
+    </script>
+
+    <footer style="text-align:center; padding: 10px; background-color: #333; color: #fff;">
+        &copy; 2024 Mitali Singh. All rights reserved.
+    </footer>
+</body>
+</html>
+
