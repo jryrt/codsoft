@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - The Lilac World Quiz Maker</title>
+    <style>
+        body {
+            background-color: #E7E4F4;
+            font-family: 'Garet', sans-serif;
+        }
+        .container {
+            background-color: white;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        .header {
+            font-family: 'Barbra', sans-serif;
+            text-align: center;
+            color: #A992CA;
+            font-size: 2.5em;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #A992CA;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #BCB5EF;
+            border-radius: 5px;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            background-color: #BCB5EF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #A992CA;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Register</div>
+        <form action="index.html" method="post">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <a href="index.html" class="button">Register</a>
+        </form>
+    </div>
+</body>
+</html>

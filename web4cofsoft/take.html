@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Quiz - The Lilac World Quiz Maker</title>
+    <style>
+        body {
+            background-color: #E7E4F4;
+            font-family: 'Garet', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            max-width: 800px;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            text-align: center;
+            display: none;
+        }
+        .container.active {
+            display: block;
+        }
+        .header {
+            font-family: 'Barbra', sans-serif;
+            color: #A992CA;
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .question {
+            text-align: left;
+            margin: 20px 0;
+            color: #A992CA;
+            font-size: 1.5em;
+        }
+        .options {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+        .options li {
+            margin: 10px 0;
+        }
+        .options input {
+            margin-right: 10px;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            text-align: center;
+            background-color: #BCB5EF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #A992CA;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="question1">
+        <div class="header">Question 1</div>
+        <div class="question">
+            <p>What is the capital of France?</p>
+            <ul class="options">
+                <li><label><input type="radio" name="q1" value="A"> Paris</label></li>
+                <li><label><input type="radio" name="q1" value="B"> London</label></li>
+                <li><label><input type="radio" name="q1" value="C"> Rome</label></li>
+                <li><label><input type="radio" name="q1" value="D"> Berlin</label></li>
+            </ul>
+        </div>
+        <button class="button" onclick="nextQuestion('question2')">Next</button>
+    </div>
+    
+    <div class="container" id="question2">
+        <div class="header">Question 2</div>
+        <div class="question">
+            <p>What is the largest planet in our solar system?</p>
+            <ul class="options">
+                <li><label><input type="radio" name="q2" value="A"> Earth</label></li>
+                <li><label><input type="radio" name="q2" value="B"> Mars</label></li>
+                <li><label><input type="radio" name="q2" value="C"> Jupiter</label></li>
+                <li><label><input type="radio" name="q2" value="D"> Saturn</label></li>
+            </ul>
+        </div>
+        <button class="button" onclick="nextQuestion('question3')">Next</button>
+    </div>
+    
+    <div class="container" id="question3">
+        <div class="header">Question 3</div>
+        <div class="question">
+            <p>What is the chemical symbol for water?</p>
+            <ul class="options">
+                <li><label><input type="radio" name="q3" value="A"> O</label></li>
+                <li><label><input type="radio" name="q3" value="B"> H2O</label></li>
+                <li><label><input type="radio" name="q3" value="C"> CO2</label></li>
+                <li><label><input type="radio" name="q3" value="D"> NaCl</label></li>
+            </ul>
+        </div>
+        <button class="button" onclick="nextQuestion('question4')">Next</button>
+    </div>
+    
+    <div class="container" id="question4">
+        <div class="header">Question 4</div>
+        <div class="question">
+            <p>Who wrote 'Romeo and Juliet'?</p>
+            <ul class="options">
+                <li><label><input type="radio" name="q4" value="A"> Charles Dickens</label></li>
+                <li><label><input type="radio" name="q4" value="B"> Mark Twain</label></li>
+                <li><label><input type="radio" name="q4" value="C"> William Shakespeare</label></li>
+                <li><label><input type="radio" name="q4" value="D"> Jane Austen</label></li>
+            </ul>
+        </div>
+        <button class="button" onclick="nextQuestion('question5')">Next</button>
+    </div>
+    
+    <div class="container" id="question5">
+        <div class="header">Question 5</div>
+        <div class="question">
+            <p>What is the hardest natural substance on Earth?</p>
+            <ul class="options">
+                <li><label><input type="radio" name="q5" value="A"> Gold</label></li>
+                <li><label><input type="radio" name="q5" value="B"> Iron</label></li>
+                <li><label><input type="radio" name="q5" value="C"> Diamond</label></li>
+                <li><label><input type="radio" name="q5" value="D"> Silver</label></li>
+            </ul>
+        </div>
+        <a href="results.html" class="button">See Results</a>
+    </div>
+
+    <script>
+        document.getElementById('question1').classList.add('active');
+        
+        function nextQuestion(questionId) {
+            const currentQuestion = document.querySelector('.container.active');
+            if (currentQuestion) {
+                currentQuestion.classList.remove('active');
+            }
+            document.getElementById(questionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
